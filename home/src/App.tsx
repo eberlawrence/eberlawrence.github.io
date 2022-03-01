@@ -1,5 +1,6 @@
 import React from "react";
 import logo from "./logo.svg";
+import githubLogo from "./github_logo.svg";
 import "./App.css";
 
 function App() {
@@ -7,16 +8,15 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
+        <p className="blink_me">
+          Under construction...
         </p>
-        <a
-          className="App-link"
-          href="https://eberlawrence.github.io/discord-interface/"
-          target="_self"
-          rel="noopener noreferrer"
-        >
-          Learn React
+        <p>
+          Meanwhile, take a look at my GitHub page:
+        </p>
+        <a href="https://github.com/eberlawrence/">
+          <img alt="Qries" src={githubLogo}
+            width="150" height="70" color="#FFFFFF" />
         </a>
       </header>
     </div>
