@@ -11,7 +11,7 @@ function App() {
         <p className="blink_me">
           Under construction...
         </p>
-        <p>
+        <p  >
           Meanwhile, take a look at my GitHub page:
         </p>
         <a href="https://github.com/eberlawrence/">
