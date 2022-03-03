@@ -32,7 +32,7 @@ function App() {
           </p>
           <a href="https://github.com/eberlawrence/">
             <img alt="Qries" src={githubLogo}
-              width="300" height="140" color="#000" />
+              width="150" height="70" />
           </a>
         </header>
       </div>
