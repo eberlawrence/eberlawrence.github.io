@@ -2,7 +2,7 @@ import React from "react";
 import logo from "./logo.svg";
 import my_photo from "./me.png";
 import githubLogo from "./github_logo.svg";
-import "./App.css";
+import "./App.scss";
 
 function App() {
   return (
@@ -18,7 +18,7 @@ function App() {
 
         </div>
         <div className="flex-item-right">
-          <img src={my_photo} className="show-pic"/>
+          <img src={my_photo} className="show-pic" alt="me"/>
         </div>
       </div>
       <div className="App">
