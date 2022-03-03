@@ -80,7 +80,7 @@
 
 .flex-item-left .p1 {
   font-weight: bold;
-  font-size: calc(100px + 2vmin);
+  font-size: calc(40px + 10%);
 }
 
 .show-hello {
@@ -98,7 +98,7 @@
 }
 
 .flex-item-left .p2 {
-  font-size: calc(60px + 2vmin);
+  font-size: calc(30px + 10%);
 }
 
 .show-presentation {
