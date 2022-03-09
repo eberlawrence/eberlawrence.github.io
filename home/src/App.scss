@@ -1,13 +1,18 @@
-$color-one: #CCDAD1;
-$color-two: #9CAEA9;
+$color-one: #000000c2;
+$color-two: #021724;
 $color-three: #788585;
-$color-four: #6F6866;
-$color-five: #38302E;
+$color-four: #08031f;
+$color-five: #000000;
+$color-text-one: #2efff9;
+$color-text-two: #2f5995;
 
+html {
+  scroll-behavior: smooth;
+}
 
 .App {
   text-align: center;
-
+  height: 100vh;
 }
 
 .App-logo {
@@ -23,7 +28,8 @@ $color-five: #38302E;
 
 .App-header {
   padding-top: 10vh;
-  padding-bottom: 10vh;
+  height: 100vh;
+  // padding-bottom: 10vh;
   background-color: $color-one;
   /* min-height: 100vh; */
   display: flex;
@@ -48,13 +54,146 @@ $color-five: #38302E;
   }
 }
 
+.menu-intro-div {
+  margin: 0;
+  padding: 0;
+  background-image: url("backgroundX.png");
+  // background-color: $color-four;
+  background-size: 100%;
+  height: 100vh;
+}
 
-.intro_div {
-  height: 70vh;
-  width: 100vw;
-  background-color: $color-four;
+.menu-div {
+  z-index:999;
+  position: fixed;
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+  height: 6%;
+  width: 100%;
+  background-color: $color-five;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.5s linear;
+}
+.menu-div:hover {
+  opacity: 1;
+}
+
+.menu-div-my-name {
+  width: 20%;
+  position: relative;
+  > img {
+    padding-left: 15px;
+    height: 80%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  > a {
+    font-family: 'Patua One', cursive;
+    font-size: 160%;
+    text-decoration: none;
+    color: $color-text-one;
+    position: absolute;
+    margin: 0;
+    top: 50%;
+    transform: translateX(50%) translateY(-50%);
+    transition: color 0.5s ease;
+  }
+  a:hover {
+    color: $color-text-two;
+  }
+}
+
+.menu-div-topics {
+  position: relative;
+  width: 50%;
+  > ul {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    > li {
+      > a {
+        text-decoration: none;
+        > p {
+          color: $color-text-one;
+          font-size: 140%;
+          font-family: 'Patua One', cursive;
+        }
+      }
+    }
+  }
+}
+
+.intro_div {
+  height: 70%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.social-media {
+  background-color: $color-two;
+  height: 20%;
+  margin: 0 10% 0 60%;
+  border-radius: 40px;
+  opacity: 0.9;
+  position: relative;
+  > p {
+    margin: 0;
+    padding-top: 20px;
+    color: white;
+    font-weight: bold;
+    font-size: 150%;
+    text-align: center;
+  }
+  > ul {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    > li {
+      > a img {
+        // transition: visibility 0s, filter 0.5s linear;
+        filter: invert(100%) sepia(0%) saturate(7492%) hue-rotate(308deg) brightness(104%) contrast(98%);
+        width: 25px !important;
+        height: 25px;
+      }
+    }
+  }
+}
+.icon-borders {
+  width: 60px;
+  height: 60px;
+  border: 2px solid white;
+  border-radius: 50%;
+  position: relative;
+  transition: visibility 0s, border 0.5s linear;
+  > img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+  }
+}
+
+.icon-borders:hover {
+  border: 2px solid $color-text-one;
+  > img {
+    // filter: invert(90%) sepia(76%) saturate(2140%) hue-rotate(130deg) brightness(104%) contrast(101%);
+  }
 }
 
 .flex-item-left {
@@ -63,7 +202,6 @@ $color-five: #38302E;
   flex: 50%;
   padding-top: 20vh;
   text-align: center;
-  
 }
 
 .flex-item-left p {
@@ -71,7 +209,7 @@ $color-five: #38302E;
   display: flex;
   flex-direction: column;
   text-align: left;
-  color: rgb(255, 255, 255);
+  color: $color-text-one;
   font-family: "Lucida Console", "Courier New", monospace;
 }
 
@@ -121,9 +259,10 @@ $color-five: #38302E;
   align-items: flex-end;
 }
 
-.flex-item-right  img{
+.flex-item-right img {
   max-width: auto;
-  max-height: 95%;
+  height: 85%;
+  max-height: 60vh;
 }
 
 .show-pic {
@@ -138,10 +277,4 @@ $color-five: #38302E;
   100% {
     opacity: 1;
   }
-}
-
-.menu-div {
-  height: 5vh;
-  width: 100vw;
-  background-color: $color-five;
 }
