@@ -1,10 +1,10 @@
-$color-one: #000000c2;
-$color-two: #021724;
-$color-three: #788585;
-$color-four: #08031f;
-$color-five: #000000;
-$color-text-one: #2efff9;
-$color-text-two: #2f5995;
+$color-one: #2f5995;
+$color-two: #000000;
+$color-text-one: #FFFFFF;
+$color-text-two: #000000;
+$color-text-three: #2efff9;
+$color-text-four: #2f5995;
+
 
 html {
   scroll-behavior: smooth;
@@ -58,7 +58,6 @@ html {
   margin: 0;
   padding: 0;
   background-image: url("backgroundX.png");
-  // background-color: $color-four;
   background-size: 100%;
   height: 100vh;
 }
@@ -71,7 +70,7 @@ html {
   justify-content: space-between;
   height: 6%;
   width: 100%;
-  background-color: $color-five;
+  background-color: $color-one;
   opacity: 0;
   transition: visibility 0s, opacity 0.5s linear;
 }
@@ -144,7 +143,7 @@ html {
   height: 20%;
   margin: 0 10% 0 60%;
   border-radius: 40px;
-  opacity: 0.9;
+  opacity: 1;
   position: relative;
   > p {
     margin: 0;
@@ -167,9 +166,9 @@ html {
     > li {
       > a img {
         // transition: visibility 0s, filter 0.5s linear;
-        filter: invert(100%) sepia(0%) saturate(7492%) hue-rotate(308deg) brightness(104%) contrast(98%);
-        width: 25px !important;
-        height: 25px;
+        filter: invert(0%) sepia(0%) saturate(7492%) hue-rotate(308deg) brightness(104%) contrast(98%);
+        width: 30px !important;
+        height: px;
       }
     }
   }
@@ -177,10 +176,11 @@ html {
 .icon-borders {
   width: 60px;
   height: 60px;
-  border: 2px solid white;
+  // border: 2px solid white;
   border-radius: 50%;
   position: relative;
-  transition: visibility 0s, border 0.5s linear;
+  background-color: white;
+  transition: visibility 0s, background-color 0.2s linear;
   > img {
     position: absolute;
     top: 50%;
@@ -190,7 +190,8 @@ html {
 }
 
 .icon-borders:hover {
-  border: 2px solid $color-text-one;
+  // border: 2px solid $color-text-one;
+  background-color: $color-text-one;
   > img {
     // filter: invert(90%) sepia(76%) saturate(2140%) hue-rotate(130deg) brightness(104%) contrast(101%);
   }
