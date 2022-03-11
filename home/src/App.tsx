@@ -3,7 +3,7 @@ import logo from "./logo.svg";
 import my_photo from "./me.png";
 import githubIcon from "./githubIcon.svg";
 import linkedinIcon from "./linkedinIcon.svg";
-import skypeIcon from "./skypeIcon.svg";
+import twitterIcon from "./twitterIcon.svg";
 import discordIcon from "./discordIcon.svg";
 import robotIcon from "./robot1.svg";
 import "./App.scss";
@@ -62,28 +62,28 @@ function App() {
           <p className="social-media-text">Social medias</p>
           <ul className="social-media-list">
             <li>
-              <a href="https://github.com/eberlawrence">
+              <a href="https://github.com/eberlawrence" target="_blank">
                 <div className="icon-borders">
                   <img alt="githubIcon" src={githubIcon} />
                 </div>
               </a>
             </li>
             <li>
-              <a href="https://linkedin.com/in/eberlawrence">
+              <a href="https://linkedin.com/in/eberlawrence" target="_blank">
                 <div className="icon-borders">
                   <img alt="linkedinIcon" src={linkedinIcon} />
                 </div>
               </a>
             </li>
             <li>
-              <a href="#">
+              <a href="https://twitter.com/EberLawrence" target="_blank">
                 <div className="icon-borders">
-                  <img alt="skypeIcon" src={skypeIcon} />
+                  <img alt="twitterIcon" src={twitterIcon} />
                 </div>
               </a>
             </li>
             <li>
-              <a href="#">
+              <a href="#" >
                 <div className="icon-borders">
                   <img alt="discordIcon" src={discordIcon} />
                 </div>

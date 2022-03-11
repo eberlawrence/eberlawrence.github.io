@@ -1,10 +1,11 @@
-$color-one: #2f5995;
-$color-two: #000000;
-$color-text-one: #FFFFFF;
+// HEX colours
+
+$color-one: #000000;
+$color-two: #0d2443;
+$color-text-one: #ffffff;
 $color-text-two: #000000;
 $color-text-three: #2efff9;
 $color-text-four: #2f5995;
-
 
 html {
   scroll-behavior: smooth;
@@ -63,7 +64,7 @@ html {
 }
 
 .menu-div {
-  z-index:999;
+  z-index: 999;
   position: fixed;
   display: flex;
   flex-direction: row;
@@ -89,7 +90,7 @@ html {
     transform: translateY(-50%);
   }
   > a {
-    font-family: 'Patua One', cursive;
+    font-family: "Patua One", cursive;
     font-size: 160%;
     text-decoration: none;
     color: $color-text-one;
@@ -124,7 +125,7 @@ html {
         > p {
           color: $color-text-one;
           font-size: 140%;
-          font-family: 'Patua One', cursive;
+          font-family: "Patua One", cursive;
         }
       }
     }
@@ -139,18 +140,18 @@ html {
 }
 
 .social-media {
-  background-color: $color-two;
+  background-color: $color-one;
   height: 20%;
   margin: 0 10% 0 60%;
   border-radius: 40px;
-  opacity: 1;
+  background: rgba($color-one, 0.6);
   position: relative;
   > p {
     margin: 0;
-    padding-top: 20px;
+    padding-top: 2%;
     color: white;
     font-weight: bold;
-    font-size: 150%;
+    font-size: 180%;
     text-align: center;
   }
   > ul {
@@ -167,8 +168,9 @@ html {
       > a img {
         // transition: visibility 0s, filter 0.5s linear;
         filter: invert(0%) sepia(0%) saturate(7492%) hue-rotate(308deg) brightness(104%) contrast(98%);
-        width: 30px !important;
-        height: px;
+        width: 50% !important;
+        height: 50%;
+        opacity: 1;
       }
     }
   }
@@ -191,10 +193,7 @@ html {
 
 .icon-borders:hover {
   // border: 2px solid $color-text-one;
-  background-color: $color-text-one;
-  > img {
-    // filter: invert(90%) sepia(76%) saturate(2140%) hue-rotate(130deg) brightness(104%) contrast(101%);
-  }
+  background-color: $color-text-three;
 }
 
 .flex-item-left {
