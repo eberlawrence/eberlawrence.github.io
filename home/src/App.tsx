@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect, useState} from "react";
 import logo from "./logo.svg";
 import my_photo from "./me.png";
 import githubIcon from "./githubIcon.svg";
@@ -9,10 +9,28 @@ import robotIcon from "./robot1.svg";
 import "./App.scss";
 
 function App() {
+
+  const [showMenu, setShowMenu] = useState<string>("menu-div-top-page");
+
+  useEffect(() => {
+    const checkScroll = () => {
+      window.onscroll = function () {
+        if (window.pageYOffset !== 0) {
+          setShowMenu("")
+        }
+        else {
+          setShowMenu("menu-div-top-page")
+        }
+      }
+    };
+    checkScroll();
+  }, []);
+
+
   return (
     <>
       <div className="menu-intro-div">
-        <div className="menu-div">
+        <div className={`menu-div ${showMenu}`}>
           <div className="menu-div-my-name">
             <img src={robotIcon} alt="RobotIcon" />
             <a href="https://eberlawrence.com/">Eber Lawrence</a>
