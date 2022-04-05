@@ -1,0 +1,26 @@
+@import "styles/colours";
+
+.about-header {
+  padding-top: 10vh;
+  height: 100vh;
+  // padding-bottom: 10vh;
+  background-color: $color-background-one;
+  /* min-height: 100vh; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: rgb(0, 0, 0);
+}
+
+
+.blink_me {
+  animation: blinker 2s linear normal;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}

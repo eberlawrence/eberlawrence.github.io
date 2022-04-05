@@ -1,32 +1,22 @@
-import React, { useEffect, useState } from "react";
-import HomeSession from "components/HomeSession/HomeSession";
+import React from "react";
 import TopMenu from "components/TopMenu/TopMenu";
-
-import discordIcon from "images/discordIcon.svg";
-import logo from "images/logo.svg";
-
-import "styles/generalStyles.scss";
+import HomeSession from "components/HomeSession/HomeSession";
+import AboutSession from "components/AboutSession/AboutSession";
+import SkillSession from "components/SkillSession/SkillSession";
+import ProjectSession from "components/ProjectSession/ProjectSession";
+import GallerySession from "components/GallerySession/GallerySession";
+import ContactSession from "components/ContactSession/ContactSession";
 
 function MainBoard() {
   return (
     <>
       <TopMenu />
       <HomeSession />
-      <div className="" id="about">
-        <header className="about-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p className="blink_me">
-            Under construction...
-          </p>
-          <p  >
-            Meanwhile, take a look at my GitHub page:
-          </p>
-          <a href="https://github.com/eberlawrence/">
-            <img alt="Qries" src={discordIcon}
-              width="150" height="70" />
-          </a>
-        </header>
-      </div>
+      <AboutSession />
+      <SkillSession />
+      <ProjectSession />
+      <GallerySession />
+      <ContactSession />
     </>
   );
 }
