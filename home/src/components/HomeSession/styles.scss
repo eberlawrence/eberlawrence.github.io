@@ -1,141 +1,12 @@
-// HEX colours
+@import "styles/colours";
 
-$color-one: #000000;
-$color-two: #0d2443;
-$color-text-one: #ffffff;
-$color-text-two: #000000;
-$color-text-three: #2efff9;
-$color-text-four: #2f5995;
-$color-background-one: #ffffff;
-$color-background-two: #bfdaff;
-
-html {
-  scroll-behavior: smooth;
-}
-
-.App {
-  text-align: center;
-  height: 100vh;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  padding-top: 10vh;
-  height: 100vh;
-  // padding-bottom: 10vh;
-  background-color: $color-one;
-  /* min-height: 100vh; */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: rgb(0, 0, 0);
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-.blink_me {
-  animation: blinker 2s linear normal;
-}
-
-@keyframes blinker {
-  50% {
-    opacity: 0;
-  }
-}
 
 .menu-intro-div {
   margin: 0;
   padding: 0;
-  background-image: url("backgroundX.png");
+  background-image: url("/images/backgroundX.png");
   background-size: 100%;
   height: 100vh;
-}
-
-.menu-div {
-  z-index: 999;
-  position: fixed;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  height: 6%;
-  width: 100%;
-  background-color: $color-one;
-  opacity: 0;
-  transition: visibility 0s, opacity 0.5s linear;
-}
-.menu-div:hover {
-  opacity: 1;
-}
-
-.menu-div-top-page {
-  opacity: 1 !important;
-}
-
-.menu-div-my-name {
-  width: 20%;
-  position: relative;
-  > img {
-    padding-left: 15px;
-    height: 80%;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-  }
-  > a {
-    font-family: "Patua One", cursive;
-    font-size: 160%;
-    text-decoration: none;
-    color: $color-text-one;
-    position: absolute;
-    margin: 0;
-    top: 50%;
-    transform: translateX(50%) translateY(-50%);
-    transition: color 0.5s ease;
-  }
-  a:hover {
-    color: $color-text-two;
-  }
-}
-
-.menu-div-topics {
-  position: relative;
-  width: 50%;
-  > ul {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 100%;
-    padding: 0;
-    margin: 0;
-    list-style-type: none;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    > li {
-      > a {
-        text-decoration: none;
-        > p {
-          color: $color-text-one;
-          font-size: 140%;
-          font-family: "Patua One", cursive;
-        }
-      }
-    }
-  }
 }
 
 .intro_div {
@@ -181,6 +52,7 @@ html {
     }
   }
 }
+
 .icon-borders {
   width: 60px;
   height: 60px;
@@ -232,7 +104,6 @@ html {
   0% {
     opacity: 0;
   }
-
   100% {
     opacity: 1;
   }
@@ -279,7 +150,6 @@ html {
   0% {
     opacity: 0;
   }
-
   100% {
     opacity: 1;
   }
