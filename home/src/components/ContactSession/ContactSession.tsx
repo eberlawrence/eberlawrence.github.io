@@ -10,7 +10,7 @@ const ContactSession: React.FC = () => {
       <header className="contact-div">
         <img src={logo} className="App-logo" alt="logo" />
         <p className="blink_me">
-          Under construction...
+          Under construction...div
         </p>
         <p  >
           Meanwhile, take a look at my GitHub page:

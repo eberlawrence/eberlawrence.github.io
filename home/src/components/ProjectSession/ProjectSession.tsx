@@ -7,7 +7,7 @@ import "./styles.scss";
 const ProjectSession: React.FC = () => {
   return (
     <div className="" id="projects">
-      <header className="projects-header">
+      <header className="projects-div">
         <img src={logo} className="App-logo" alt="logo" />
         <p className="blink_me">
           Under construction...

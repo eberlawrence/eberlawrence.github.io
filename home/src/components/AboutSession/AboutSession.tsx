@@ -7,7 +7,7 @@ import "./styles.scss";
 const AboutSession: React.FC = () => {
   return (
     <div className="" id="about">
-      <header className="about-header">
+      <header className="about-div">
         <img src={logo} className="App-logo" alt="logo" />
         <p className="blink_me">
           Under construction...

@@ -7,7 +7,7 @@ import "./styles.scss";
 const SkillSession: React.FC = () => {
   return (
     <div className="" id="skills">
-      <header className="skill-header">
+      <header className="skill-div">
         <img src={logo} className="App-logo" alt="logo" />
         <p className="blink_me">
           Under construction...

@@ -7,7 +7,7 @@ import "./styles.scss";
 const GallerySession: React.FC = () => {
   return (
     <div className="" id="gallery">
-      <header className="gallery-header">
+      <header className="gallery-div">
         <img src={logo} className="App-logo" alt="logo" />
         <p className="blink_me">
           Under construction...
