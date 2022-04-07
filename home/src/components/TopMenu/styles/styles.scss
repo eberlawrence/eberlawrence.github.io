@@ -25,3 +25,43 @@
   flex-direction: row;
   justify-content: space-between;
 }
+
+.menu-div-my-name {
+  position: relative;
+  > img {
+    padding-left: 15px;
+    height: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  > a {
+    font-family: "Patua One", cursive;
+    font-size: 160%;
+    text-decoration: none;
+    color: $color-text-one;
+    position: absolute;
+    margin: 0;
+    top: 50%;
+  }
+}
+
+.menu-div-topics {
+  > ul {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    list-style-type: none;
+    display: flex;
+    > li {
+      > a {
+        text-decoration: none;
+        > p {
+          margin: 0;
+          color: $color-text-one;
+          font-family: "Patua One", cursive;
+        }
+      }
+    }
+  }
+}

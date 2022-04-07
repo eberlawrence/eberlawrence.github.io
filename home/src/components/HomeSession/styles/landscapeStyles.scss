@@ -34,6 +34,11 @@
 
   .social-media {
     margin: 0 10% 0 60%;
+    .social-media-text-container {
+      .social-media-text {
+        font-size: 180%;
+      }
+    }
   }
 
   .icon-borders {

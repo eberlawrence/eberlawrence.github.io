@@ -24,7 +24,8 @@
   .flex-item-right {
     height: 100%;
     position: relative;
-    margin-bottom: 5vh;
+    margin-bottom: 8vh;
+    margin-top: 5vh;
     img {
       height: 100%;
       position: absolute;
@@ -36,13 +37,18 @@
     height: auto;
     width: 90%;
     position: absolute;
-    bottom: 5vh;
+    bottom: 8vh;
     left: 50%;
     transform: translate(-50%, 0);
   }
 
   .social-media {
     width: 100%;
+    .social-media-text-container {
+      .social-media-text {
+        font-size: 160%;
+      }
+    }
   }
 
   .icon-borders {

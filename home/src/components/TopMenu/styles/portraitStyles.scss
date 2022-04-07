@@ -7,7 +7,7 @@
   }
 
   .menu-div-opened {
-    height: 30vh;
+    height: 40vh;
     transition: visibility 0s, height 0.2s linear, opacity 0.5s linear;
   }
   .menu-div-closed {
@@ -16,64 +16,36 @@
   }
 
   .menu-div-my-name {
-    width: 50%;
-    position: relative;
+    width: 80%;
     > img {
-      padding-left: 15px;
-      height: 80%;
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
+      height: 60%;
     }
     > a {
-      font-family: "Patua One", cursive;
-      font-size: 160%;
-      text-decoration: none;
-      color: $color-text-one;
-      position: absolute;
-      margin: 0;
-      top: 50%;
-      transform: translateX(50%) translateY(-50%);
-      transition: color 0.5s ease;
-    }
-    a:hover {
-      color: $color-text-two;
+      transform: translateX(30%) translateY(-50%);
     }
   }
 
   .menu-button {
+    border: 0; 
+    padding: 0 2% 0 0;
     background-color: transparent !important;
-    border: 0;
     > img {
-      height: 90%;
+      height: 70%;
     }
     cursor: pointer;
   }
 
   .menu-div-topics {
-    // max-height: 30vh;
-    height: 90%;
+    height: 95%;
     > ul {
-      width: 100%;
       height: 100%;
-      padding: 0;
-      margin: 0;
-      list-style-type: none;
-      display: flex;
       flex-direction: column;
-      // justify-content: space-between;
       > li {
         height: 15%;
         > a {
-          text-decoration: none;
-          height: 100%;
           > p {
-            margin: 0;
-            // padding: 1%;
             text-align: center;
-            color: $color-text-one;
-            font-size: 140%;
-            font-family: "Patua One", cursive;
+            font-size: 130%;
           }
         }
       }
