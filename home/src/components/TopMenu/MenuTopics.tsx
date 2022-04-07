@@ -1,6 +1,8 @@
 import React from "react";
-import "./styles.scss";
 
+import "./styles/styles.scss";
+import "./styles/landscapeStyles.scss";
+import "./styles/portraitStyles.scss";
 
 const MenuTopics: React.FC = () => {
   return (

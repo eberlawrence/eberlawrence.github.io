@@ -1,0 +1,27 @@
+@import "styles/colours";
+
+
+.menu-div {
+  z-index: 999;
+  position: fixed;
+  height: 6vh;
+  width: 100vw;
+  background-color: $color-background-footer-header;
+  opacity: 0;
+}
+
+.menu-div:hover {
+  opacity: 1;
+}
+
+.menu-div-top-page {
+  opacity: 1 !important;
+}
+
+.header-container {
+  height: 6vh;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}

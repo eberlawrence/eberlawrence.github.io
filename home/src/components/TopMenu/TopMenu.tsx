@@ -1,9 +1,11 @@
 import React, { useEffect, useState } from "react";
 import robotIcon from "images/robot.svg";
 import menuIcon from "images/menuIcon.svg";
-import "./styles.scss";
 import MenuTopics from "./MenuTopics";
 
+import "./styles/styles.scss";
+import "./styles/landscapeStyles.scss";
+import "./styles/portraitStyles.scss";
 
 const TopMenu: React.FC = () => {
 
@@ -36,7 +38,7 @@ const TopMenu: React.FC = () => {
   }, []);
 
   return (
-    <div className={`menu-div ${showMenu} ${menuButton && `menu-div-opened`}`}>
+    <div className={`menu-div ${showMenu} ${menuButton ? `menu-div-opened` : ``}`}>
       <div className="header-container">
         <div className="menu-div-my-name">
           <img src={robotIcon} alt="RobotIcon" />

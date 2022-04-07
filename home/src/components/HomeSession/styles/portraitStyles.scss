@@ -1,0 +1,53 @@
+@import "styles/colours";
+
+@media only screen and (max-width: 700px) {
+  .intro_div {
+    height: 100vh;
+    flex-direction: column;
+    position: relative;
+  }
+  .flex-item-left {
+    padding-top: 10vh;
+    height: auto;
+    p {
+      text-align: center;
+      margin: 4%;
+    }
+    .p1 {
+      font-size: calc(30px + 20%);
+    }
+    .p2 {
+      font-size: calc(20px + 20%);
+    }
+  }
+
+  .flex-item-right {
+    height: 100%;
+    position: relative;
+    margin-bottom: 5vh;
+    img {
+      height: 100%;
+      position: absolute;
+      top: 0;
+    }
+  }
+
+  .social-media-container {
+    height: auto;
+    width: 90%;
+    position: absolute;
+    bottom: 5vh;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+
+  .social-media {
+    width: 100%;
+  }
+
+  .icon-borders {
+    width: 60px;
+    height: 60px;
+  }
+
+}

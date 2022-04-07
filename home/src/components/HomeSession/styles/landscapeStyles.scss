@@ -1,0 +1,44 @@
+@import "styles/colours";
+
+@media only screen and (min-width: 700px) {
+  .intro_div {
+    height: 70%;
+    flex-direction: row;
+  }
+
+  .flex-item-left {
+    flex: 50%;
+    padding-top: 20vh;
+    p {
+      padding-left: 20%;
+      text-align: left;
+    }
+    .p1 {
+      font-size: calc(40px + 10%);
+    }
+    .p2 {
+      font-size: calc(30px + 10%);
+    }
+  }
+
+  .flex-item-right {
+    img {
+      height: 85%;
+      max-height: 60vh;
+    }
+  }
+
+  .social-media-container {
+    height: auto;
+  }
+
+  .social-media {
+    margin: 0 10% 0 60%;
+  }
+
+  .icon-borders {
+    width: 80px;
+    height: 80px;
+  }
+
+}

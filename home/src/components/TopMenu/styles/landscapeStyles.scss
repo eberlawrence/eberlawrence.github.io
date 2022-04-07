@@ -1,0 +1,63 @@
+@import "styles/colours";
+
+@media only screen and (min-width: 700px) {
+  .menu-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    transition: visibility 0s, opacity 0.5s linear;
+  }
+
+  .menu-div-my-name {
+    width: 20%;
+    position: relative;
+    > img {
+      padding-left: 15px;
+      height: 80%;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+    > a {
+      font-family: "Patua One", cursive;
+      font-size: 160%;
+      text-decoration: none;
+      color: $color-text-one;
+      position: absolute;
+      margin: 0;
+      top: 50%;
+      transform: translateX(50%) translateY(-50%);
+      transition: color 0.5s ease;
+    }
+    a:hover {
+      color: $color-text-two;
+    }
+  }
+
+  .menu-div-topics {
+    position: relative;
+    width: 50%;
+    > ul {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 100%;
+      padding: 0;
+      margin: 0;
+      list-style-type: none;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      > li {
+        > a {
+          text-decoration: none;
+          > p {
+            color: $color-text-one;
+            font-size: 140%;
+            font-family: "Patua One", cursive;
+          }
+        }
+      }
+    }
+  }
+}

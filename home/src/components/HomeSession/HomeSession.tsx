@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import "./styles.scss";
+
 import background1 from "images/bg3.png";
 import background2 from "images/bg2.png";
 import my_photo from "images/me.png";
@@ -7,6 +7,10 @@ import githubIcon from "images/githubIcon.svg";
 import linkedinIcon from "images/linkedinIcon.svg";
 import twitterIcon from "images/twitterIcon.svg";
 import discordIcon from "images/discordIcon.svg";
+
+import "./styles/styles.scss";
+import "./styles/landscapeStyles.scss";
+import "./styles/portraitStyles.scss";
 
 const HomeSession: React.FC = () => {
 
@@ -40,7 +44,9 @@ const HomeSession: React.FC = () => {
       </div>
       <div className="social-media-container">
         <div className="social-media">
-          <p className="social-media-text">Social medias</p>
+          <div className="social-media-text-container">
+            <p className="social-media-text">Social medias</p>
+          </div>
           <ul className="social-media-list">
             <li>
               <a href="https://github.com/eberlawrence" target="_blank" rel="noopener noreferrer">

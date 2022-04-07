@@ -1,0 +1,144 @@
+@import "styles/colours";
+
+.menu-intro-div {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  position: relative;
+  > img {
+    z-index: -1;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+  }
+}
+
+.intro_div {
+  display: flex;
+}
+
+.flex-item-left {
+  p {
+    display: flex;
+    flex-direction: column;
+    color: $color-text-one;
+    font-family: "Lucida Console", "Courier New", monospace;
+  }
+  .p1 {
+    font-weight: bold;
+  }
+}
+
+.show-hello {
+  animation: say_hello 2s 2s linear backwards;
+}
+
+@keyframes say_hello {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.show-presentation {
+  animation: present_myself 2s 4s linear backwards;
+}
+
+@keyframes present_myself {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.flex-item-right {
+  justify-content: center;
+  display: flex;
+  flex: 50%;
+  align-items: flex-end;
+  img {
+    max-width: auto;
+  }
+}
+
+
+.show-pic {
+  animation: my_pic 2s 0s linear backwards;
+}
+
+@keyframes my_pic {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+
+.social-media {
+  background-color: $color-one;
+  height: 20vh;
+  border-radius: 40px;
+  background: rgba($color-one, 0.7);
+  position: relative;
+  .social-media-text-container {
+    height: 30%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    .social-media-text {
+      margin: 0;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      font-weight: bold;
+      font-size: 180%;
+      color: white;
+    }
+  }
+  > ul {
+    margin: 0;
+    padding: 0;
+    height: 70%;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    > li {
+      > a img {
+        filter: invert(0%) sepia(0%) saturate(7492%) hue-rotate(308deg) brightness(104%) contrast(98%);
+        width: 50%;
+        height: 100%;
+        opacity: 1;
+      }
+    }
+  }
+}
+
+.icon-borders {
+  position: absolute;
+  top: 40%;
+  transform: translateY(-40%);
+  border-radius: 50%;
+  position: relative;
+  background-color: white;
+  transition: visibility 0s, background-color 0.2s linear;
+  > img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+  }
+}
+
+.icon-borders:hover {
+  // border: 2px solid $color-text-one;
+  background-color: $color-text-three;
+}
