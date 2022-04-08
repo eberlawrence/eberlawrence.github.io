@@ -22,10 +22,18 @@
     display: flex;
     flex-direction: column;
     color: $color-text-one;
-    font-family: "Lucida Console", "Courier New", monospace;
+  }
+  h1 {
+    display: flex;
+    flex-direction: column;
+    color: $color-text-one;
   }
   .p1 {
-    font-weight: bold;
+    font-family: 'VT323', monospace;
+    // font-weight: bold;
+  }
+  .p2 {
+    font-family: 'Fauna One', serif;
   }
 }
 
@@ -80,6 +88,19 @@
   }
 }
 
+.show-social-media {
+  animation: social_media 2s 0s linear backwards;
+}
+
+@keyframes social_media {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
 
 
 .social-media {
@@ -139,5 +160,5 @@
 
 .icon-borders:hover {
   // border: 2px solid $color-text-one;
-  background-color: $color-text-three;
+  background-color: $color-two;
 }

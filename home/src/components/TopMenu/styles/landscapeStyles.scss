@@ -17,7 +17,7 @@
       transform: translateX(35%) translateY(-50%);
     }
     a:hover {
-      color: $color-text-three;
+      color: $color-two;
       transition: color .5s;
     }
   }
@@ -37,7 +37,7 @@
             font-size: 140%;
           }
           p:hover {
-            color: $color-text-three;
+            color: $color-two;
             transition: color .5s ease;
           }
         }

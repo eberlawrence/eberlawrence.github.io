@@ -35,14 +35,14 @@ const HomeSession: React.FC = () => {
       <div className="intro_div" id="home">
         <div className="flex-item-left">
           <p className="p1 show-hello">Hey there!</p>
-          <p className="p2 show-presentation">I'm Eber Lawrence, and</p>
+          <h1 className="p2 show-presentation">I'm Eber Lawrence, and</h1>
           <p className="p2 show-presentation">I'm a Biomedical Engineer.</p>
         </div>
         <div className="flex-item-right">
           <img src={my_photo} className="show-pic" alt="me" />
         </div>
       </div>
-      <div className="social-media-container">
+      <div className="social-media-container show-social-media">
         <div className="social-media">
           <div className="social-media-text-container">
             <p className="social-media-text">Social medias</p>
